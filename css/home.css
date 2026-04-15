@@ -1,0 +1,116 @@
+/* ===== GLOBAL STYLE ===== */
+
+body {
+    background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* ===== HEADINGS ===== */
+
+h1 {
+    font-size: 42px;
+    color: #2c3e50;
+    margin-top: 30px;
+}
+
+h2 {
+    color: #34495e;
+}
+
+/* ===== TEXT ===== */
+
+p {
+    font-size: 18px;
+    color: #333;
+}
+
+/* ===== SECTION BOXES ===== */
+
+.section {
+    background: white;
+    width: 70%;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+}
+
+/* ===== LISTS ===== */
+
+ol {
+    text-align: left;
+    display: inline-block;
+}
+
+ul {
+    margin-top: 5px;
+}
+
+/* ===== IMAGES ===== */
+
+img {
+    width: 28%;
+    border-radius: 10px;
+    margin: 10px;
+    transition: transform 0.3s;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+/* ===== LINKS (BUTTON STYLE) ===== */
+
+a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 15px;
+    background-color: #6c5ce7;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    background-color: #4834d4;
+}
+
+/* ===== YOUTUBE ===== */
+
+iframe {
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+
+
+/* ===== TABLEAU FIX (UPDATED) ===== */
+
+#viz1776288768814 {
+    width: 95%;
+    max-width: 1200px; /* Matched the 1200px from your HTML script to prevent squishing */
+    margin: 40px auto;
+    border-radius: 12px;
+    box-shadow: 0px 6px 18px rgba(0,0,0,0.15);
+    
+    /* Removed fixed height and flexbox rules to let the container wrap the iframe naturally */
+}
+
+/* Force BOTH the initial object and the dynamically injected iframe to the full height */
+#viz1776288768814 object, 
+#viz1776288768814 iframe {
+    width: 100% !important;
+    height: 1000px !important; /* Forces the actual graph window to be full size */
+    border: none;
+    border-radius: 12px;
+    display: block;
+}
+
+.tableauPlaceholder {
+    margin: 0 auto;
+    /* Removed flexbox from here as well, as it conflicts with Tableau's sizing */
+}
